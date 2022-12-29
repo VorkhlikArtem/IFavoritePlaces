@@ -14,9 +14,18 @@
 		AC02FA9A2957345B00C6DBB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC02FA992957345B00C6DBB0 /* Assets.xcassets */; };
 		AC02FA9D2957345B00C6DBB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC02FA9B2957345B00C6DBB0 /* LaunchScreen.storyboard */; };
 		AC02FAA52957349200C6DBB0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC02FAA42957349200C6DBB0 /* RatingControl.swift */; };
+		ACC9F99B295CB817007C2C72 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */; };
+		ACC9F99D295CB8E4007C2C72 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */; };
+		ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99E295CC364007C2C72 /* MainCell.swift */; };
+		ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A0295CDAC4007C2C72 /* Place.swift */; };
+		ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */; };
+		D8DF09772CC244F1763FE428 /* Pods_IFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C15B91A1285F907350EBE7 /* Pods_IFood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643217581C26900DC30283FC /* Pods-IFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFood.release.xcconfig"; path = "Target Support Files/Pods-IFood/Pods-IFood.release.xcconfig"; sourceTree = "<group>"; };
+		72C15B91A1285F907350EBE7 /* Pods_IFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A798E1706FB9E78278E9618F /* Pods-IFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFood.debug.xcconfig"; path = "Target Support Files/Pods-IFood/Pods-IFood.debug.xcconfig"; sourceTree = "<group>"; };
 		AC02FA8D2957345300C6DBB0 /* IFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC02FA902957345300C6DBB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC02FA922957345300C6DBB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,11 @@
 		AC02FA9C2957345B00C6DBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC02FA9E2957345B00C6DBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC02FAA42957349200C6DBB0 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		ACC9F99E295CC364007C2C72 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		ACC9F9A0295CDAC4007C2C72 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DF09772CC244F1763FE428 /* Pods_IFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DA0A00653D226FD709E70C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A798E1706FB9E78278E9618F /* Pods-IFood.debug.xcconfig */,
+				643217581C26900DC30283FC /* Pods-IFood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC02FA842957345300C6DBB0 = {
 			isa = PBXGroup;
 			children = (
 				AC02FA8F2957345300C6DBB0 /* IFood */,
 				AC02FA8E2957345300C6DBB0 /* Products */,
+				3DA0A00653D226FD709E70C6 /* Pods */,
+				B0BF5064EA4FA116BABD0540 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +87,11 @@
 				AC02FA902957345300C6DBB0 /* AppDelegate.swift */,
 				AC02FA922957345300C6DBB0 /* SceneDelegate.swift */,
 				AC02FA942957345300C6DBB0 /* ViewController.swift */,
+				ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */,
+				ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */,
+				ACC9F99E295CC364007C2C72 /* MainCell.swift */,
+				ACC9F9A0295CDAC4007C2C72 /* Place.swift */,
+				ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */,
 				AC02FAA42957349200C6DBB0 /* RatingControl.swift */,
 				AC02FA962957345300C6DBB0 /* Main.storyboard */,
 				AC02FA992957345B00C6DBB0 /* Assets.xcassets */,
@@ -70,6 +101,14 @@
 			path = IFood;
 			sourceTree = "<group>";
 		};
+		B0BF5064EA4FA116BABD0540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C15B91A1285F907350EBE7 /* Pods_IFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC02FAA12957345B00C6DBB0 /* Build configuration list for PBXNativeTarget "IFood" */;
 			buildPhases = (
+				F4F55E3B3C0AEE21838B168C /* [CP] Check Pods Manifest.lock */,
 				AC02FA892957345300C6DBB0 /* Sources */,
 				AC02FA8A2957345300C6DBB0 /* Frameworks */,
 				AC02FA8B2957345300C6DBB0 /* Resources */,
+				BE57DF756EFD7ED636B11811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +177,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BE57DF756EFD7ED636B11811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IFood/Pods-IFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IFood/Pods-IFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IFood/Pods-IFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F55E3B3C0AEE21838B168C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC02FA892957345300C6DBB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC9F99D295CB8E4007C2C72 /* DetailTableViewController.swift in Sources */,
+				ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */,
 				AC02FAA52957349200C6DBB0 /* RatingControl.swift in Sources */,
+				ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */,
+				ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */,
 				AC02FA952957345300C6DBB0 /* ViewController.swift in Sources */,
 				AC02FA912957345300C6DBB0 /* AppDelegate.swift in Sources */,
+				ACC9F99B295CB817007C2C72 /* MainTableViewController.swift in Sources */,
 				AC02FA932957345300C6DBB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +376,7 @@
 		};
 		AC02FAA22957345B00C6DBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A798E1706FB9E78278E9618F /* Pods-IFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +404,7 @@
 		};
 		AC02FAA32957345B00C6DBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643217581C26900DC30283FC /* Pods-IFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
