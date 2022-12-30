@@ -17,6 +17,7 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class DetailTableViewController: UITableViewController {
         saveButton.isEnabled = false
         nameTextField.addTarget(self, action: #selector(textFieldChanged) , for: .editingChanged)
         setupEditScreen()
+        tableView.tableFooterView = UIView()
     }
     
     private func setupEditScreen() {
@@ -45,6 +47,7 @@ class DetailTableViewController: UITableViewController {
         nameTextField.text = currentPlace.name
         typeTextField.text = currentPlace.type
         locationTextField.text = currentPlace.location
+        ratingControl.rating = Int(currentPlace.rating)
 
     }
     
@@ -61,7 +64,7 @@ class DetailTableViewController: UITableViewController {
         let image = isImageChanged ? placeImageView.image : UIImage(named: "imagePlaceholder")
         let imageData = image?.pngData()
         
-        let newPlace = Place(name: nameTextField.text!, location: locationTextField.text, type: typeTextField.text, imageData: imageData)
+        let newPlace = Place(name: nameTextField.text!, location: locationTextField.text, type: typeTextField.text, imageData: imageData, rating: Double(ratingControl.rating))
         
         if let currentPlace = currentPlace {
             try! StorageManager.realm.write {
@@ -69,6 +72,7 @@ class DetailTableViewController: UITableViewController {
                 currentPlace.type = newPlace.type
                 currentPlace.location = newPlace.location
                 currentPlace.imageData = newPlace.imageData
+                currentPlace.rating = newPlace.rating
             }
         } else {
             StorageManager.saveObject(newPlace)
@@ -107,10 +111,17 @@ class DetailTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - Navigation
+    
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "ShowMap",
+              let mapVC = segue.destination as? MapViewController else {return}
+        mapVC.place = currentPlace
+    }
     
 }
 

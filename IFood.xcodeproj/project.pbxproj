@@ -14,6 +14,7 @@
 		AC02FA9A2957345B00C6DBB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC02FA992957345B00C6DBB0 /* Assets.xcassets */; };
 		AC02FA9D2957345B00C6DBB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC02FA9B2957345B00C6DBB0 /* LaunchScreen.storyboard */; };
 		AC02FAA52957349200C6DBB0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC02FAA42957349200C6DBB0 /* RatingControl.swift */; };
+		ACBFF14E295F766F008A2A15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFF14D295F766E008A2A15 /* MapViewController.swift */; };
 		ACC9F99B295CB817007C2C72 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */; };
 		ACC9F99D295CB8E4007C2C72 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */; };
 		ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99E295CC364007C2C72 /* MainCell.swift */; };
@@ -35,6 +36,7 @@
 		AC02FA9C2957345B00C6DBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC02FA9E2957345B00C6DBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC02FAA42957349200C6DBB0 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		ACBFF14D295F766E008A2A15 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		ACC9F99E295CC364007C2C72 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				AC02FA942957345300C6DBB0 /* ViewController.swift */,
 				ACC9F99A295CB817007C2C72 /* MainTableViewController.swift */,
 				ACC9F99C295CB8E4007C2C72 /* DetailTableViewController.swift */,
+				ACBFF14D295F766E008A2A15 /* MapViewController.swift */,
 				ACC9F99E295CC364007C2C72 /* MainCell.swift */,
 				ACC9F9A0295CDAC4007C2C72 /* Place.swift */,
 				ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */,
@@ -227,6 +230,7 @@
 				ACC9F99D295CB8E4007C2C72 /* DetailTableViewController.swift in Sources */,
 				ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */,
 				AC02FAA52957349200C6DBB0 /* RatingControl.swift in Sources */,
+				ACBFF14E295F766F008A2A15 /* MapViewController.swift in Sources */,
 				ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */,
 				ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */,
 				AC02FA952957345300C6DBB0 /* ViewController.swift in Sources */,
