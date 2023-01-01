@@ -120,7 +120,10 @@ class DetailTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "ShowMap",
               let mapVC = segue.destination as? MapViewController else {return}
-        mapVC.place = currentPlace
+        mapVC.place.name = nameTextField.text ?? ""
+        mapVC.place.location = locationTextField.text
+        mapVC.place.type = typeTextField.text
+        mapVC.place.imageData = placeImageView.image?.pngData()
     }
     
 }

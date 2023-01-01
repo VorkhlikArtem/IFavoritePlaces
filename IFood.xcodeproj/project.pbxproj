@@ -20,6 +20,7 @@
 		ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99E295CC364007C2C72 /* MainCell.swift */; };
 		ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A0295CDAC4007C2C72 /* Place.swift */; };
 		ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */; };
+		ACD020D629622FFF0035168B /* VC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD020D529622FFF0035168B /* VC + Extension.swift */; };
 		D8DF09772CC244F1763FE428 /* Pods_IFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C15B91A1285F907350EBE7 /* Pods_IFood.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		ACC9F99E295CC364007C2C72 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		ACC9F9A0295CDAC4007C2C72 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		ACD020D529622FFF0035168B /* VC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				ACC9F9A0295CDAC4007C2C72 /* Place.swift */,
 				ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */,
 				AC02FAA42957349200C6DBB0 /* RatingControl.swift */,
+				ACD020D529622FFF0035168B /* VC + Extension.swift */,
 				AC02FA962957345300C6DBB0 /* Main.storyboard */,
 				AC02FA992957345B00C6DBB0 /* Assets.xcassets */,
 				AC02FA9B2957345B00C6DBB0 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 				ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */,
 				ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */,
 				AC02FA952957345300C6DBB0 /* ViewController.swift in Sources */,
+				ACD020D629622FFF0035168B /* VC + Extension.swift in Sources */,
 				AC02FA912957345300C6DBB0 /* AppDelegate.swift in Sources */,
 				ACC9F99B295CB817007C2C72 /* MainTableViewController.swift in Sources */,
 				AC02FA932957345300C6DBB0 /* SceneDelegate.swift in Sources */,

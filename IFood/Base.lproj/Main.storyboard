@@ -373,6 +373,18 @@
                                     <action selector="cancel:" destination="o2b-sm-9re" eventType="touchUpInside" id="XCi-IZ-2OC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-yD-60X">
+                                <rect key="frame" x="324" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Q9-cT-vlE"/>
+                                    <constraint firstAttribute="width" constant="50" id="bbd-5f-YJC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Location"/>
+                                <connections>
+                                    <action selector="centerViewInUserLocation:" destination="o2b-sm-9re" eventType="touchUpInside" id="BBV-aQ-lIr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Be4-Ve-OZD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -380,7 +392,9 @@
                             <constraint firstItem="lkJ-eS-plO" firstAttribute="top" secondItem="cFb-mb-DPO" secondAttribute="top" id="Dcd-Gl-Pv6"/>
                             <constraint firstItem="VHk-Zi-Smg" firstAttribute="top" secondItem="Be4-Ve-OZD" secondAttribute="top" constant="40" id="Erk-e5-PUi"/>
                             <constraint firstItem="lkJ-eS-plO" firstAttribute="leading" secondItem="Be4-Ve-OZD" secondAttribute="leading" id="JWI-B5-QN9"/>
+                            <constraint firstItem="Be4-Ve-OZD" firstAttribute="bottom" secondItem="NpL-yD-60X" secondAttribute="bottom" constant="40" id="LET-k3-UmD"/>
                             <constraint firstItem="Be4-Ve-OZD" firstAttribute="trailing" secondItem="VHk-Zi-Smg" secondAttribute="trailing" constant="40" id="Mbj-fc-nhE"/>
+                            <constraint firstItem="Be4-Ve-OZD" firstAttribute="trailing" secondItem="NpL-yD-60X" secondAttribute="trailing" constant="40" id="Pg8-qq-AzY"/>
                             <constraint firstItem="lkJ-eS-plO" firstAttribute="trailing" secondItem="Be4-Ve-OZD" secondAttribute="trailing" id="Skq-Y6-Z6V"/>
                             <constraint firstAttribute="bottom" secondItem="lkJ-eS-plO" secondAttribute="bottom" id="ZdJ-mW-9au"/>
                         </constraints>
@@ -444,6 +458,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="30" height="30"/>
         <image name="map" width="50" height="50"/>
         <image name="multiply@4x" width="54" height="54"/>
         <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
