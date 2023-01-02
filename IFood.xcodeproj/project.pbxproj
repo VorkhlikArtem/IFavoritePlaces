@@ -21,6 +21,7 @@
 		ACC9F9A1295CDAC4007C2C72 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A0295CDAC4007C2C72 /* Place.swift */; };
 		ACC9F9A3295DC4A0007C2C72 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */; };
 		ACD020D629622FFF0035168B /* VC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD020D529622FFF0035168B /* VC + Extension.swift */; };
+		ACD020D929633A700035168B /* MKMapView + .swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD020D829633A700035168B /* MKMapView + .swift */; };
 		D8DF09772CC244F1763FE428 /* Pods_IFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C15B91A1285F907350EBE7 /* Pods_IFood.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		ACC9F9A0295CDAC4007C2C72 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		ACD020D529622FFF0035168B /* VC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC + Extension.swift"; sourceTree = "<group>"; };
+		ACD020D829633A700035168B /* MKMapView + .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView + .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +100,22 @@
 				ACC9F9A0295CDAC4007C2C72 /* Place.swift */,
 				ACC9F9A2295DC4A0007C2C72 /* StorageManager.swift */,
 				AC02FAA42957349200C6DBB0 /* RatingControl.swift */,
-				ACD020D529622FFF0035168B /* VC + Extension.swift */,
+				ACD020D729633A520035168B /* Extensions */,
 				AC02FA962957345300C6DBB0 /* Main.storyboard */,
 				AC02FA992957345B00C6DBB0 /* Assets.xcassets */,
 				AC02FA9B2957345B00C6DBB0 /* LaunchScreen.storyboard */,
 				AC02FA9E2957345B00C6DBB0 /* Info.plist */,
 			);
 			path = IFood;
+			sourceTree = "<group>";
+		};
+		ACD020D729633A520035168B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACD020D529622FFF0035168B /* VC + Extension.swift */,
+				ACD020D829633A700035168B /* MKMapView + .swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B0BF5064EA4FA116BABD0540 /* Frameworks */ = {
@@ -231,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC9F99D295CB8E4007C2C72 /* DetailTableViewController.swift in Sources */,
+				ACD020D929633A700035168B /* MKMapView + .swift in Sources */,
 				ACC9F99F295CC364007C2C72 /* MainCell.swift in Sources */,
 				AC02FAA52957349200C6DBB0 /* RatingControl.swift in Sources */,
 				ACBFF14E295F766F008A2A15 /* MapViewController.swift in Sources */,
