@@ -22,4 +22,14 @@ class StorageManager {
             realm.delete(place)
         }
     }
+    
+    static func firstDataRetrieving() -> Results<Place> {
+        let places = StorageManager.realm.objects(Place.self)
+        if !places.isEmpty {
+            return places
+        } else {
+            Place.saveMockPlacesInRealm()
+            return StorageManager.realm.objects(Place.self)
+        }
+    }
 }

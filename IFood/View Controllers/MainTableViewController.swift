@@ -30,8 +30,7 @@ class MainTableViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        places = StorageManager.realm.objects(Place.self)
-        
+        places = StorageManager.firstDataRetrieving()
         setupSearchController()
     }
     
@@ -104,20 +103,21 @@ class MainTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     private func sorting() {
         if sortingSegmentedControl.selectedSegmentIndex == 0 {
-            if isFiltering {
-                filteredPlaces = filteredPlaces.sorted(byKeyPath: "date", ascending: isAscendingSorting)
-            } else {
-                places = places.sorted(byKeyPath: "date", ascending: isAscendingSorting)
-            }
-            
+            sorting(byKeyPath: "date")
+        } else if sortingSegmentedControl.selectedSegmentIndex == 1 {
+            sorting(byKeyPath: "name")
         } else {
-            if isFiltering {
-                filteredPlaces = filteredPlaces.sorted(byKeyPath: "name", ascending: isAscendingSorting)
-            } else {
-                places = places.sorted(byKeyPath: "name", ascending: isAscendingSorting)
-            }
+            sorting(byKeyPath: "rating")
         }
         tableView.reloadData()
+    }
+    
+    private func sorting(byKeyPath: String) {
+        if isFiltering {
+            filteredPlaces = filteredPlaces.sorted(byKeyPath: byKeyPath, ascending: isAscendingSorting)
+        } else {
+            places = places.sorted(byKeyPath: byKeyPath, ascending: isAscendingSorting)
+        }
     }
     
     // MARK: - Navigation
