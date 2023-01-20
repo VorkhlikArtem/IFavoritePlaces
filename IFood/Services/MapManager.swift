@@ -79,7 +79,7 @@ class MapManager {
     }
     
     //строим маршрут от местоположения пользователя до заведения
-    func getDirections(for mapView: MKMapView, previousLocation: (CLLocation)-> Void) {
+    func getDirections(for mapView: MKMapView, previousLocation: (CLLocation)-> Void, distanceAndTimeDisplay: @escaping (String, String)-> Void) {
         guard let location = locationManager.location?.coordinate else {
             showAlert(title: "Error", message: "Current location is not found")
             return
@@ -111,8 +111,7 @@ class MapManager {
                 let distance = String(format: "%.1f", route.distance/1000)
                 let timeInterval = route.expectedTravelTime
                 
-                print("Distance to place \(distance) km" )
-                print("Time to go \(timeInterval) sec")
+                distanceAndTimeDisplay("Distance to place \(distance) km", "Time to go \(timeInterval) sec")
             }
         }
     }

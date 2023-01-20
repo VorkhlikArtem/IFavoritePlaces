@@ -41,11 +41,13 @@ class MapViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var pinImageView: UIImageView!
     @IBOutlet weak var getDirectionButton: UIButton!
+    @IBOutlet weak var distanceAndTimeLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         currentAddress.text = ""
+        distanceAndTimeLabel.text = ""
         map.delegate = self
         setupMapView()
     }
@@ -73,8 +75,11 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func getDirection(_ sender: Any) {
-        mapManager.getDirections(for: map) { location in
-            self.previousLocation = location
+        mapManager.getDirections(for: map) { [weak self] location in
+            self?.previousLocation = location
+        } distanceAndTimeDisplay: { [weak self] distance, time in
+            self?.distanceAndTimeLabel.isHidden = false
+            self?.distanceAndTimeLabel.text = distance + "\n" + time
         }
     }
     

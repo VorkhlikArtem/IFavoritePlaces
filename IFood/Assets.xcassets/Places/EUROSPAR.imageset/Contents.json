@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Sherlock Holmes.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Sherlock Holmes@2x.jpg",
+      "filename" : "EUROSPAR.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Sherlock Holmes@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

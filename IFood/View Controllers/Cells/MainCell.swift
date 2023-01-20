@@ -13,6 +13,7 @@ class MainCell: UITableViewCell {
     
     @IBOutlet weak var placeImageView: UIImageView! {
         didSet {
+            placeImageView.contentMode = .scaleAspectFill
             placeImageView.layer.cornerRadius = placeImageView.frame.size.height / 2
             placeImageView.clipsToBounds = true
         }
