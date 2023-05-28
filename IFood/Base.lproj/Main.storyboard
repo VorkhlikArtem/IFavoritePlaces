@@ -323,7 +323,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="224" placeholderIntrinsicHeight="79" translatesAutoresizingMaskIntoConstraints="NO" id="fMv-hV-cz4" customClass="RatingControl" customModule="IFood" customModuleProvider="target">
-                                                    <rect key="frame" x="95" y="11" width="224" height="79"/>
+                                                    <rect key="frame" x="97" y="28.5" width="220" height="44"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -377,12 +377,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lkJ-eS-plO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHk-Zi-Smg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHk-Zi-Smg">
                                 <rect key="frame" x="334" y="40" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="cwt-9x-3dV"/>
                                     <constraint firstAttribute="height" constant="50" id="ghu-qr-Ppi"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="">
                                     <imageReference key="image" image="multiply" symbolScale="default"/>
@@ -392,12 +393,13 @@
                                     <action selector="cancel:" destination="o2b-sm-9re" eventType="touchUpInside" id="XCi-IZ-2OC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-yD-60X">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-yD-60X">
                                 <rect key="frame" x="324" y="658" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0Q9-cT-vlE"/>
                                     <constraint firstAttribute="width" constant="50" id="bbd-5f-YJC"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Location"/>
                                 <connections>
@@ -426,12 +428,13 @@
                                     <action selector="donePressed:" destination="o2b-sm-9re" eventType="touchUpInside" id="w2E-b1-b5X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-gp-9tq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-gp-9tq">
                                 <rect key="frame" x="182" y="718" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="34h-OX-1WK"/>
                                     <constraint firstAttribute="width" constant="50" id="TCD-Nf-Lih"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="GetDirection"/>
                                 <connections>

@@ -152,8 +152,8 @@
 		ACD020D729633A520035168B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				ACD020D529622FFF0035168B /* VC + Extension.swift */,
 				ACD020D829633A700035168B /* MKMapView + .swift */,
+				ACD020D529622FFF0035168B /* VC + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
